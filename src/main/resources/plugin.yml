@@ -1,0 +1,20 @@
+name: UNO
+version: '${version}'
+main: io.github.beddeak.uno.UnoPlugin
+api-version: '26.3'
+author: beddeak
+description: 'UNO - 색과 숫자를 맞추는 카드 게임'
+commands:
+  uno:
+    description: UNO 게임
+    aliases: [우노, 카드, lc, lastcard]
+    usage: /<command> help
+permissions:
+  lastcard.admin:
+    description: 이전 관리자 권한 호환
+    default: false
+    children:
+      uno.admin: true
+  uno.admin:
+    description: 게임 시작·종료, 아케이드 생성, 테이블과 규칙 설정
+    default: op

@@ -1,0 +1,24 @@
+.gradle/
+build/
+.idea/
+*.iml
+bin/
+
+# Keep the complete playable server and map; omit local secrets and transient data.
+server/server.properties
+server/logs/
+server/.paper/
+server/**/session.lock
+server/**/session.lock.*
+server/**/uid.dat
+server/crash-reports/
+server/plugins/spark/tmp/
+*.log
+*.lck
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.publish-tmp/
+backups/
